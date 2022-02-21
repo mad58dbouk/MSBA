@@ -13,7 +13,7 @@ st.markdown("Mohamad Dbouk MSBA 325 streamlit Assignment")
 
 st.markdown("""Note: please note that all these figures are for the sake of plotting figures and presenting several visualizations using plotly and streamlit.""" )
 
-df = pd.read_csv('C:\\Users\\LENOVO\\Documents\\countries.csv')
+df = pd.read_csv('countries.csv')
 
 df.drop(columns=['Agriculture','Industry','Service'], axis=1 ,inplace = True)
 df.rename({'Literacy (%)':'Literacy','GDP ($ per capita)':'GDP','Infant mortality (per 1000 births)':'Infantmortality','Phones (per 1000)':'Phonesperthou'}, axis=1 ,inplace = True)
